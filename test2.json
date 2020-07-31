@@ -1,0 +1,230 @@
+{
+  "problem_info": {
+    "cip_tasks": 1,
+    "workers": 0,
+    "weight_time": 0.5,
+    "weight_cost": 0.5,
+    "weight_machines" : 0.5,
+    "weight_duedates":0,
+    "max_total_time": 30,
+    "max_time_solver": 15,
+    "explorations": 10
+  },
+  "formulas": 
+  [
+    {
+      "formula_id": 1,
+      "product_id": 1,
+      "step": 1,
+      "stp_pre": [0],
+      "machine_id": 1,
+      "type": 1,
+      "max_output": 50,
+      "processing_delay": 4,
+      "cost": 2
+    },
+    {
+      "formula_id": 2,
+      "product_id": 1,
+      "step": 2,
+      "stp_pre": [1],
+      "machine_id": 2,
+      "type": 1,
+      "max_output": 25,
+      "processing_delay": 4,
+      "cost": 1
+    },
+    {
+      "formula_id": 3,
+      "product_id": 1,
+      "step": 2,
+      "stp_pre": [1],
+      "machine_id": 3,
+      "type": 1,
+      "max_output": 25,
+      "processing_delay": 2,
+      "cost": 2
+    },
+    {
+      "formula_id": 4,
+      "product_id": 1,
+      "step": 3,
+      "stp_pre": [0],
+      "machine_id": 4,
+      "type": 1,
+      "max_output": 100,
+      "processing_delay": 10,
+      "cost": 2
+    },
+    {
+      "formula_id": 5,
+      "product_id": 1,
+      "step": 4,
+      "stp_pre": [2, 3],
+      "machine_id": 5,
+      "type": 1,
+      "max_output": 75,
+      "processing_delay": 15,
+      "cost": 1
+    },
+    {
+      "formula_id": 6,
+      "product_id": 1,
+      "step": 4,
+      "stp_pre": [2, 3],
+      "machine_id": 6,
+      "type": 1,
+      "max_output": 50,
+      "processing_delay": 15,
+      "cost": 1
+    },
+    {
+      "formula_id": 7,
+      "product_id": 1,
+      "step": 4,
+      "stp_pre": [2, 3],
+      "machine_id": 7,
+      "type": 1,
+      "max_output": 100,
+      "processing_delay": 10,
+      "cost": 1
+    },
+    {
+      "formula_id": 12,
+      "product_id": 1,
+      "step": 5,
+      "stp_pre": [4],
+      "machine_id": 8,
+      "type": 1,
+      "max_output": 100,
+      "processing_delay": 4,
+      "cost": 1
+    },
+    {
+      "formula_id": 8,
+      "product_id": 2,
+      "step": 1,
+      "stp_pre": [0],
+      "machine_id": 4,
+      "type": 1,
+      "max_output": 100,
+      "processing_delay": 4,
+      "cost": 1
+    },
+    {
+      "formula_id": 9,
+      "product_id": 2,
+      "step": 2,
+      "stp_pre": [1],
+      "machine_id": 5,
+      "type": 1,
+      "max_output": 75,
+      "processing_delay": 15,
+      "cost": 1
+    },
+    {
+      "formula_id": 10,
+      "product_id": 2,
+      "step": 2,
+      "stp_pre": [1],
+      "machine_id": 6,
+      "type": 1,
+      "max_output": 50,
+      "processing_delay": 15,
+      "cost": 1
+    },
+    {
+      "formula_id": 11,
+      "product_id": 2,
+      "step": 2,
+      "stp_pre": [1],
+      "machine_id": 7,
+      "type": 1,
+      "max_output": 100,
+      "processing_delay": 10,
+      "cost": 1
+    }
+  ],
+  "machines":
+  [
+ {
+  "machine_id":1,
+  "clean_delay":2,
+  "clean_cost":3.0,
+  "clean_every":8
+ },
+ {
+  "machine_id":2,
+  "clean_delay":4,
+  "clean_cost":2.0,
+  "clean_every":10
+ },
+ {
+  "machine_id":3,
+  "clean_delay":2,
+  "clean_cost":2.0,
+  "clean_every":10
+ },
+ {
+  "machine_id":4,
+  "clean_delay":1,
+  "clean_cost":2.0,
+  "clean_every":30
+ },
+ {
+  "machine_id":5,
+  "clean_delay":4,
+  "clean_cost":8.0,
+  "clean_every":20
+ },
+ {
+  "machine_id":6,
+  "clean_delay":4,
+  "clean_cost":5.0,
+  "clean_every":20
+ },
+ {
+  "machine_id":7,
+  "clean_delay":4,
+  "clean_cost":4.0,
+  "clean_every":20
+ },
+ {
+  "machine_id":8,
+  "clean_delay":2,
+  "clean_cost":4.0,
+  "clean_every":20
+ },
+ {
+  "machine_id":9,
+  "clean_delay":2,
+  "clean_cost":4.0,
+  "clean_every":20
+ }
+],
+  "machines_states":
+ {
+ "available":{
+  "1":1,
+  "2":1,
+  "3":1,
+  "4":1,
+  "5":1,
+  "6":1,
+  "7":1,
+  "8":1,
+  "9":0
+ }
+},
+"shifts": [0],
+"workers": [0],
+"orders":
+[
+ {
+  "order_id":1,
+  "delivery_date":"2020-01-12",
+  "quantity":300,
+  "product_id":1
+ } 
+]
+}
